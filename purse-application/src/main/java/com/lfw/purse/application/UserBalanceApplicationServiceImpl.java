@@ -74,6 +74,7 @@ public class UserBalanceApplicationServiceImpl implements UserBalanceApplication
         balanceDetailDto.setCreator(userId);
         balanceDetailDto.setModifier(userId);
         balanceDetailDto.setOrderId(orderId);
+        balanceDetailDto.setDelFlag(false);
 
         if (StringUtils.isEmpty(orderId)) {
             balanceDetailDto.setOrderId(UUID());
@@ -120,6 +121,7 @@ public class UserBalanceApplicationServiceImpl implements UserBalanceApplication
         balanceDetailDto.setCreator(userId);
         balanceDetailDto.setModifier(userId);
         balanceDetailDto.setOrderId(orderId);
+        balanceDetailDto.setDelFlag(false);
 
         if (StringUtils.isEmpty(orderId)) {
             balanceDetailDto.setOrderId(UUID());
